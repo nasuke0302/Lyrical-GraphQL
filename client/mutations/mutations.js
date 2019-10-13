@@ -22,8 +22,18 @@ export const addLyricToSong = gql`
             lyrics {
                 id
                 content
+                likes
             }
             
         }
     }
+`;
+
+export const likeLyric = gql`
+mutation likeLyric($id: ID) {
+    likeLyric(id: $id) {
+        id
+        likes
+    }
+}
 `;
