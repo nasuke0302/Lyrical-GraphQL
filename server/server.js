@@ -8,7 +8,7 @@ const schema = require('./schema/schema');
 const app = express();
 
 // Replace with your mongo URI
-const MONGO_URI = 'mongodb://localhost:27017';
+const MONGO_URI = 'mongodb://localhost:27017/lyrical';
 if (!MONGO_URI) {
     throw new Error('You must provide a Mongo URI');
 }
