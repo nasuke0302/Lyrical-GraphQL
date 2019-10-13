@@ -1,3 +1,5 @@
+import './style/style.css'
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, hashHistory, IndexRoute } from 'react-router';
