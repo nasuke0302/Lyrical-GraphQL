@@ -13,7 +13,7 @@ class SongDetail extends Component {
             <div className='container'>
                 <Link to='/'>Back</Link>
                 <h3>{song.title}</h3>
-                <LyricCreate></LyricCreate>
+                <LyricCreate songId={this.props.params.id} />
             </div>
         );
     }
