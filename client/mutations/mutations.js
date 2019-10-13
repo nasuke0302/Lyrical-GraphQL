@@ -6,3 +6,11 @@ mutation addSong($title: String) {
         title
     }
 }`;
+
+export const deleteSongs = gql`
+    mutation deleteSong($id: ID) {
+        deleteSong(id: $id) {
+            id
+        }
+    }
+`;
