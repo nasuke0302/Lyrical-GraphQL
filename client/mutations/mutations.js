@@ -1,9 +1,8 @@
 import gql from 'graphql-tag';
 
-export default gql`
+export const addSongs = gql`
 mutation addSong($title: String) {
     addSong (title: $title) {
         title
     }
-}
-`;
+}`;
